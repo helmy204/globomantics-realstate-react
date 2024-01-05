@@ -8,14 +8,14 @@ const subtitleStyle = {
     color: "coral"
 };
 
-const Banner = () => {
+const Banner = ({ children }: any) => {
     return (
         <Row as={"header"} className='mb-4'>
             <Col md={5}>
                 <img src="./imgs/GloboLogo.png" alt="logo" className='logo' />
             </Col>
             <Col md={7} className='mt-5' style={subtitleStyle}>
-                Providing houses all over the world
+                { children }
             </Col>
         </Row>
     );
